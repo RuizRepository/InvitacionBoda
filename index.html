@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrimonio Civil de Valentin & Mariluz | 07 de Noviembre de 2026</title>
+  
+  <!-- Meta tags para vista previa bonita en WhatsApp con la foto de Valentin y Mariluz -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Valentin & Mariluz - Nuestro Matrimonio Civil">
+  <meta property="og:description" content="Acompáñanos a celebrar nuestro matrimonio civil el 07 de noviembre de 2026 en Cusco. ¡Haz clic para abrir la invitación!">
+  <meta property="og:image" content="https://invitacion-boda-gray-iota.vercel.app/foto1.jpeg">
+  <meta property="og:image:secure_url" content="https://invitacion-boda-gray-iota.vercel.app/foto1.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:url" content="https://invitacion-boda-gray-iota.vercel.app/">
+
+  <!-- Meta tags para Twitter / X y otras aplicaciones -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Valentin & Mariluz - Nuestro Matrimonio Civil">
+  <meta name="twitter:description" content="Acompáñanos a celebrar nuestro matrimonio civil el 07 de noviembre de 2026 en Cusco. ¡Haz clic para abrir la invitación!">
+  <meta name="twitter:image" content="https://invitacion-boda-gray-iota.vercel.app/foto1.jpeg">
+
+  <!-- Fuentes elegantes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Iconos Lucide / FontAwesome estilo SVG -->
+  <style>
+    :root {
+      --bg-wine-dark: #38050c;
+      --bg-wine-main: #590914;
+      --bg-wine-light: #7c0e1d;
+      --gold-primary: #d4af37;
+      --gold-light: #f5df93;
+      --gold-dark: #9e7d23;
+      --gold-gradient: linear-gradient(135deg, #f7e6a7 0%, #d4af37 50%, #9e7d23 100%);
+      --text-gold: #e8c977;
+      --text-light: #fcf8f0;
+      --text-muted: #d9bf9f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-wine-dark);
+      color: var(--text-light);
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    /* Contenedor central móvil simulación app */
+    .mobile-container {
+      width: 100%;
+      max-width: 480px;
+      min-height: 100vh;
+      position: relative;
+      background: radial-gradient(circle at 50% 20%, var(--bg-wine-light) 0%, var(--bg-wine-main) 50%, var(--bg-wine-dark) 100%);
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
+      overflow: hidden;
+    }
+
+    /* Fondo fotográfico opcional con filtro borgoña */
+    .background-photo-layer {
+      position: absolute;
+      inset: 0;
+      /* Usa fondo.jpg si lo colocas en tu carpeta, o la imagen de muestra */
+      background-image: url('fondo.jpg'), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.16; /* Opacidad equilibrada para la foto de fondo */
+      mix-blend-mode: luminosity;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Marco decorativo dorado lateral con medallones */
+    .gold-frame {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      pointer-events: none;
+      z-index: 50;
+      max-width: calc(480px - 24px);
+      margin: 0 auto;
+    }
+    .gold-frame::before {
+      content: '';
+      position: absolute;
+      inset: 4px;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    .side-frame-ornament {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, #2d0307 65%, transparent 100%);
+      border-radius: 12px;
+    }
+    .side-frame-left {
+      left: -13px;
+    }
+    .side-frame-right {
+      right: -13px;
+    }
+    .side-frame-ornament svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.55));
+    }
+
+    /* =======================================
+       DESTELLOS DORADOS QUE CAEN (SPARKLES RAIN)
+       ======================================= */
+    #sparklesCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 120; /* Flota sobre toda la pantalla sin bloquear clics */
+    }
+
+    .cover-sparkles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    .sparkle-star {
+      position: absolute;
+      pointer-events: none;
+      fill: #ffeaad;
+      filter: drop-shadow(0 0 6px #ffd875) drop-shadow(0 0 12px rgba(255, 215, 110, 0.85));
+      animation: sparkleTwinkle var(--duration, 3.5s) ease-in-out infinite alternate;
+      animation-delay: var(--delay, 0s);
+      opacity: 0.95;
+      transform-origin: center;
+    }
+
+    @keyframes sparkleTwinkle {
+      0% {
+        transform: scale(0.6) rotate(var(--rot, 0deg));
+        opacity: 0.4;
+        filter: drop-shadow(0 0 4px rgba(245, 215, 110, 0.6));
+      }
+      50% {
+        transform: scale(1.25) rotate(calc(var(--rot, 0deg) + 8deg));
+        opacity: 1;
+        filter: drop-shadow(0 0 8px #fff2c4) drop-shadow(0 0 16px rgba(255, 220, 100, 0.95));
+      }
+      100% {
+        transform: scale(0.75) rotate(calc(var(--rot, 0deg) - 5deg));
+        opacity: 0.5;
+        filter: drop-shadow(0 0 5px rgba(245, 215, 110, 0.7));
+      }
+    }
+
+    /* =======================================
+       VISTA 1: PORTADA CON BOTÓN ABRIR
+       ======================================= */
+    #view-cover {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: radial-gradient(circle at 50% 50%, #460710 0%, #2e040a 65%, #1c0205 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.9s ease;
+    }
+
+    #view-cover.open {
+      transform: scale(1.08);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Tarjeta flotante central idéntica a tu captura de referencia (tono cálido burdeos original) */
+    .cover-card {
+      position: relative;
+      width: 100%;
+      max-width: 660px;
+      min-height: 480px;
+      padding: 44px 30px 40px;
+      border-radius: 16px;
+      background: radial-gradient(ellipse at 50% 36%, #88101e 0%, #560712 50%, #240206 100%);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      box-shadow: 0 0 55px rgba(200, 15, 30, 0.32), 0 35px 80px rgba(0, 0, 0, 0.88);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Arte botánico detallado en el fondo de la tarjeta */
+    .cover-botanical-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .seal-heart-container {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 35%, #fbe9b8 0%, #d4af37 60%, #a98322 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 35px rgba(225, 180, 75, 0.65), 0 4px 15px rgba(0,0,0,0.6);
+      margin-top: 5px;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .seal-heart-container svg {
+      width: 32px;
+      height: 32px;
+      fill: #220205;
+    }
+
+    .cover-names {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.85rem;
+      font-weight: 500;
+      text-transform: none; /* Letra inicial mayúscula como en la imagen */
+      letter-spacing: 0.5px;
+      color: #f7e2a4;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7), 0 0 20px rgba(212, 175, 55, 0.25);
+      line-height: 1.15;
+      margin: 0;
+    }
+      text-shadow: 0 2px 10px rgba(0,0,0,0.75), 0 0 25px rgba(212, 175, 55, 0.35);
+      line-height: 1.15;
+      margin: 0;
+    }
+      letter-spacing: 0.5px;
+      color: #f7e2a4;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7), 0 0 20px rgba(212, 175, 55, 0.25);
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    .cover-ampersand {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.75rem;
+      color: #d4af37;
+      margin: 2px 0;
+    }
+
+    .cover-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 16px auto;
+      width: 150px;
+    }
+    .cover-divider .line {
+      height: 1px;
+      flex: 1;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    }
+    .cover-divider svg {
+      width: 18px;
+      height: 18px;
+      fill: #d4af37;
+    }
+
+    .cover-date {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: #f0dcab;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    .cover-invitation-text {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #dfc596;
+      font-size: 1.15rem;
+      letter-spacing: 0.5px;
+      margin-top: 8px;
+      margin-bottom: 14px; /* Espacio elegante hacia el nombre del invitado */
+    }
+
+    /* Nombre de invitados personalizado */
+    .guest-container {
+      margin-top: 0;
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .guest-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #fff2cf;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(212,175,55,0.4);
+      line-height: 1.25;
+      max-width: 90%;
+    }
+
+    .guest-passes {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #2b0307;
+      background: var(--gold-gradient);
+      padding: 3px 14px;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .btn-open {
+      margin-top: 5px;
+      background: linear-gradient(135deg, #f0d58e 0%, #d4af37 60%, #b88d26 100%);
+      color: #260205;
+      border: none;
+      padding: 12px 46px;
+      border-radius: 28px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+      text-transform: none; /* Abrir con mayúscula inicial */
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.5), 0 0 25px rgba(212, 175, 55, 0.45);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .btn-open:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 28px rgba(212, 175, 55, 0.7);
+    }
+    .btn-open:active {
+      transform: scale(0.98);
+    }
+
+    @media (max-width: 520px) {
+      .cover-card {
+        padding: 32px 18px 30px;
+        min-height: 430px;
+      }
+      .cover-names {
+        font-size: 2.25rem;
+      }
+      .cover-ampersand {
+        font-size: 1.45rem;
+      }
+      .seal-heart-container {
+        width: 64px;
+        height: 64px;
+      }
+      .seal-heart-container svg {
+        width: 28px;
+        height: 28px;
+      }
+      .cover-date {
+        font-size: 1.02rem;
+      }
+      .cover-invitation-text {
+        font-size: 1.02rem;
+        margin-bottom: 12px;
+      }
+      .guest-container {
+        margin-bottom: 16px;
+      }
+      .guest-name {
+        font-size: 1.18rem;
+      }
+      .btn-open {
+        padding: 10px 40px;
+        font-size: 1.05rem;
+      }
+    }
+
+    /* =======================================
+       VISTA 2: DETALLES DEL EVENTO
+       ======================================= */
+    #view-details {
+      position: relative;
+      z-index: 10;
+      padding: 40px 20px 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1.2s ease 0.4s, transform 1.2s ease 0.4s;
+    }
+
+    #view-details.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .ornament-header {
+      width: 250px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+    }
+
+    .header-pretitle {
+      font-size: 0.75rem;
+      letter-spacing: 4px;
+      color: var(--text-gold);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .couple-title-serif {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.35rem;
+      font-weight: 500;
+      color: #ffe6a3;
+      letter-spacing: 0.5px;
+      line-height: 1.15;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.8), 0 0 16px rgba(212, 175, 55, 0.4);
+    }
+    .couple-title-script {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.4rem;
+      color: #ffd875;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.8), 0 0 15px rgba(212, 175, 55, 0.4);
+      line-height: 1.1;
+    }
+    .couple-title-amp {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-style: italic;
+      color: var(--gold-primary);
+      margin: 2px 0;
+      text-shadow: 0 0 12px rgba(212, 175, 55, 0.45);
+    }
+
+    /* Divisores ornamentales */
+    .ornament-divider {
+      width: 100%;
+      max-width: 320px;
+      margin: 25px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .ornament-divider::before, .ornament-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.7), transparent);
+    }
+    .ornament-divider svg {
+      width: 28px;
+      height: 28px;
+      fill: var(--gold-primary);
+    }
+
+    /* Sección de los Padres */
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      color: #ffd875;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .parents-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      width: 100%;
+      margin: 15px 0 25px;
+      font-size: 0.8rem;
+    }
+    .parent-block h4 {
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+      color: var(--text-gold);
+      margin-bottom: 4px;
+    }
+    .parent-block p {
+      color: #fff2d6;
+      line-height: 1.4;
+      font-size: 0.82rem;
+    }
+
+    .blessing-text {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #e5cd9e;
+      margin: 10px 0 20px;
+      line-height: 1.5;
+    }
+
+    .full-names {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      color: #ffe6a3;
+      margin: 10px 0;
+      letter-spacing: 0.5px;
+    }
+
+    /* Tarjeta de Ceremonia Civil estilo Foto de Referencia */
+    .event-card {
+      background: rgba(36, 3, 7, 0.55);
+      border: 1px solid rgba(212, 175, 55, 0.32);
+      border-radius: 16px;
+      padding: 28px 18px 24px;
+      width: 100%;
+      margin: 18px 0;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(212, 175, 55, 0.04);
+      backdrop-filter: blur(5px);
+    }
+
+    .event-type-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #ffd875;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .event-place {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.12rem;
+      color: #ffffff;
+      margin-bottom: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.3px;
+    }
+
+    .event-time-intro {
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #d4af37;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .event-time-badge {
+      display: inline-block;
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+    }
+
+    /* Desglose elegante de horarios: Llegada e Inicio */
+    .event-schedule-duo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 6px auto 16px;
+      padding: 10px 14px;
+      background: rgba(212, 175, 55, 0.07);
+      border-radius: 12px;
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      max-width: 360px;
+    }
+
+    .schedule-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+
+    .schedule-time {
+      font-family: 'Cinzel', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #fce4a6;
+      letter-spacing: 0.5px;
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+    }
+
+    .schedule-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.68rem;
+      color: #f7e1b5;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 3px;
+    }
+
+    .schedule-separator {
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      color: rgba(212, 175, 55, 0.45);
+      font-weight: 200;
+      user-select: none;
+    }
+
+    /* Bloque de fecha estilo exacto de la foto */
+    .event-date-block {
+      margin: 14px 0 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .event-date-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .date-day-name, .date-month-name {
+      font-family: 'Cinzel', serif;
+      font-size: 0.88rem;
+      letter-spacing: 2.5px;
+      color: #ffd875;
+      font-weight: 600;
+    }
+
+    .date-bar {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+      color: rgba(212, 175, 55, 0.45);
+      font-weight: 200;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .date-day-number {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #fff2cf;
+      line-height: 1;
+      text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+    }
+
+    .date-year {
+      font-family: 'Cinzel', serif;
+      font-size: 1.15rem;
+      letter-spacing: 5px;
+      color: #ffd875;
+      margin-top: 8px;
+      font-weight: 600;
+      text-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+    }
+
+    .btn-card-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, rgba(247, 230, 167, 0.15) 0%, rgba(212, 175, 55, 0.3) 100%);
+      border: 1px solid var(--gold-primary);
+      color: #fce4a6;
+      padding: 11px 26px;
+      border-radius: 25px;
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      transition: all 0.3s;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    }
+    .btn-card-action .maps-icon {
+      width: 22px;
+      height: 26px;
+      flex-shrink: 0;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+      transition: transform 0.25s ease;
+    }
+    .btn-card-action:hover {
+      background: var(--gold-gradient);
+      color: #2b0206;
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.6);
+      transform: translateY(-2px);
+    }
+    .btn-card-action:hover .maps-icon {
+      transform: scale(1.12);
+    }
+
+    /* Galería de Fotos */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      width: 100%;
+      margin: 15px 0;
+    }
+    .gallery-item {
+      position: relative;
+      aspect-ratio: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      transition: transform 0.4s;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+    .gallery-overlay-badge {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(35, 3, 7, 0.75);
+      border: 1px solid rgba(212, 175, 55, 0.6);
+      border-radius: 20px;
+      padding: 3px 10px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #ffd875;
+      font-size: 0.75rem;
+      font-weight: 600;
+      pointer-events: none;
+    }
+
+    /* =======================================
+       VISOR DE FOTOS LIGHTBOX (AMPLIAR Y NAVEGAR)
+       ======================================= */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      background: rgba(20, 2, 5, 0.68); /* Fondo translúcido con efecto de transparencia */
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+      padding: 20px;
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 90vw;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+
+    .lightbox-content img {
+      max-width: 86vw;
+      max-height: 75vh;
+      object-fit: contain;
+      border-radius: 12px;
+      border: 1.5px solid rgba(212, 175, 55, 0.6);
+      box-shadow: 0 12px 45px rgba(0, 0, 0, 0.95), 0 0 30px rgba(212, 175, 55, 0.3);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .lightbox-caption {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: #fce8bd;
+      letter-spacing: 1px;
+      margin-top: 14px;
+      text-align: center;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: rgba(45, 4, 8, 0.85);
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      color: #ffd875;
+      font-size: 2.2rem;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.25s, transform 0.25s;
+      z-index: 310;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    }
+
+    .lightbox-close:hover {
+      background: var(--gold-gradient);
+      color: #240205;
+      transform: scale(1.1);
+    }
+
+    .lightbox-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(45, 4, 8, 0.85);
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      color: #ffd875;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s;
+      z-index: 310;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    }
+
+    .lightbox-arrow:hover {
+      background: var(--gold-gradient);
+      color: #240205;
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .lightbox-prev {
+      left: 18px;
+    }
+
+    .lightbox-next {
+      right: 18px;
+    }
+
+    @media (max-width: 600px) {
+      .lightbox-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+      }
+      .lightbox-prev { left: 8px; }
+      .lightbox-next { right: 8px; }
+      .lightbox-close { top: 14px; right: 14px; width: 40px; height: 40px; font-size: 1.8rem; }
+    }
+
+    /* Cuenta Regresiva */
+    .countdown-section {
+      width: 100%;
+      margin: 25px 0;
+    }
+    .countdown-label {
+      font-family: 'Cinzel', serif;
+      font-size: 1.05rem;
+      letter-spacing: 1.5px;
+      color: #ffd875;
+      margin-bottom: 15px;
+    }
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      width: 100%;
+    }
+    .countdown-box {
+      background: rgba(45, 3, 7, 0.8);
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      border-radius: 8px;
+      padding: 10px 4px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+    .countdown-num {
+      font-family: 'Cinzel', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .countdown-txt {
+      font-size: 0.65rem;
+      color: var(--text-gold);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+
+    /* Mini Calendario de Noviembre */
+    .calendar-card {
+      background: rgba(30, 2, 5, 0.7);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 10px;
+      padding: 16px;
+      width: 100%;
+      max-width: 320px;
+      margin: 15px auto;
+    }
+    .calendar-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.95rem;
+      color: #f7e2a4;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .calendar-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.75rem;
+      color: #edd9b1;
+    }
+    .calendar-table th {
+      padding: 4px;
+      font-weight: 400;
+      color: var(--gold-light);
+    }
+    .calendar-table td {
+      padding: 6px 2px;
+      text-align: center;
+    }
+    .calendar-table td.wedding-day {
+      background: var(--gold-gradient);
+      color: #2b0205;
+      border-radius: 50%;
+      font-weight: bold;
+      position: relative;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+    }
+
+    .btn-add-calendar {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: var(--gold-light);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    /* Botón de Confirmar Asistencia (RSVP) */
+    .rsvp-container {
+      margin-top: 30px;
+      width: 100%;
+      padding: 0 10px;
+    }
+    .btn-rsvp {
+      display: block;
+      width: 100%;
+      background: var(--gold-gradient);
+      color: #2b0205;
+      text-decoration: none;
+      padding: 16px 24px;
+      border-radius: 35px;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 2px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6), 0 0 15px rgba(212, 175, 55, 0.4);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .btn-rsvp:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.7);
+    }
+
+    /* Botón flotante de música */
+    .music-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      z-index: 120;
+      transition: transform 0.3s;
+    }
+    .music-btn svg {
+      width: 22px;
+      height: 22px;
+      fill: #260205;
+    }
+    .music-btn.playing {
+      animation: rotateDisc 4s linear infinite;
+    }
+
+    @keyframes rotateDisc {
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(212, 175, 55, 0.5); }
+      50% { transform: scale(1.06); box-shadow: 0 0 35px rgba(212, 175, 55, 0.85); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Canvas para la lluvia de destellos dorados que caen suavemente -->
+  <canvas id="sparklesCanvas"></canvas>
+
+  <!-- Marco decorativo lateral con medallones filigrana idénticos a la foto -->
+  <div class="gold-frame">
+    <!-- Medallón filigrana lateral izquierdo -->
+    <div class="side-frame-ornament side-frame-left">
+      <svg viewBox="0 0 26 110" fill="none">
+        <circle cx="13" cy="6" r="2" fill="#d4af37"/>
+        <circle cx="13" cy="13" r="1.5" fill="#f5df93"/>
+        <path d="M 13,16 C 10,22 4,25 4,32 C 4,38 9,41 13,43 C 17,41 22,38 22,32 C 22,25 16,22 13,16 Z" stroke="#d4af37" stroke-width="1.2"/>
+        <circle cx="8" cy="32" r="1" fill="#ffd875"/>
+        <circle cx="18" cy="32" r="1" fill="#ffd875"/>
+        <!-- Corazón central -->
+        <path d="M 13,46 C 10.5,42.5 7,41 4,41 C 1,41 -0.5,44 0.5,48 C 2,53 7.5,58.5 13,64 C 18.5,58.5 24,53 25.5,48 C 26.5,44 25,41 22,41 C 19,41 15.5,42.5 13,46 Z" fill="rgba(212,175,55,0.18)" stroke="#f5df93" stroke-width="1.3"/>
+        <circle cx="13" cy="52" r="1.6" fill="#ffd875"/>
+        <path d="M 13,67 C 9,69 4,72 4,78 C 4,85 10,88 13,94 C 16,88 22,85 22,78 C 22,72 17,69 13,67 Z" stroke="#d4af37" stroke-width="1.2"/>
+        <circle cx="8" cy="78" r="1" fill="#ffd875"/>
+        <circle cx="18" cy="78" r="1" fill="#ffd875"/>
+        <circle cx="13" cy="97" r="1.5" fill="#f5df93"/>
+        <circle cx="13" cy="104" r="2" fill="#d4af37"/>
+      </svg>
+    </div>
+
+    <!-- Medallón filigrana lateral derecho -->
+    <div class="side-frame-ornament side-frame-right">
+      <svg viewBox="0 0 26 110" fill="none">
+        <circle cx="13" cy="6" r="2" fill="#d4af37"/>
+        <circle cx="13" cy="13" r="1.5" fill="#f5df93"/>
+        <path d="M 13,16 C 10,22 4,25 4,32 C 4,38 9,41 13,43 C 17,41 22,38 22,32 C 22,25 16,22 13,16 Z" stroke="#d4af37" stroke-width="1.2"/>
+        <circle cx="8" cy="32" r="1" fill="#ffd875"/>
+        <circle cx="18" cy="32" r="1" fill="#ffd875"/>
+        <!-- Corazón central -->
+        <path d="M 13,46 C 10.5,42.5 7,41 4,41 C 1,41 -0.5,44 0.5,48 C 2,53 7.5,58.5 13,64 C 18.5,58.5 24,53 25.5,48 C 26.5,44 25,41 22,41 C 19,41 15.5,42.5 13,46 Z" fill="rgba(212,175,55,0.18)" stroke="#f5df93" stroke-width="1.3"/>
+        <circle cx="13" cy="52" r="1.6" fill="#ffd875"/>
+        <path d="M 13,67 C 9,69 4,72 4,78 C 4,85 10,88 13,94 C 16,88 22,85 22,78 C 22,72 17,69 13,67 Z" stroke="#d4af37" stroke-width="1.2"/>
+        <circle cx="8" cy="78" r="1" fill="#ffd875"/>
+        <circle cx="18" cy="78" r="1" fill="#ffd875"/>
+        <circle cx="13" cy="97" r="1.5" fill="#f5df93"/>
+        <circle cx="13" cy="104" r="2" fill="#d4af37"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Contenedor central -->
+  <div class="mobile-container">
+    
+    <!-- Destellos dorados dentro de la tarjeta -->
+    <div class="mobile-sparkles" id="sparkles-card"></div>
+    
+    <!-- Capa de foto de fondo personalizable -->
+    <div class="background-photo-layer" id="bgPhoto"></div>
+
+    <!-- =======================================
+         VISTA 1: PORTADA CON BOTÓN ABRIR
+         ======================================= -->
+    <section id="view-cover">
+      
+      <div class="cover-card">
+        
+        <!-- ARTE BOTÁNICO TONAL (GRABADO EN TERRACOTA/BURDEOS IDÉNTICO A TU IMAGEN DE REFERENCIA) -->
+        <svg class="cover-botanical-svg" viewBox="0 0 660 480" preserveAspectRatio="none">
+          <defs>
+            <!-- Tono cálido terracota / cobre burdeos del grabado de referencia -->
+            <linearGradient id="engravedTone" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#b64234" stop-opacity="0.88"/>
+              <stop offset="50%" stop-color="#993226" stop-opacity="0.78"/>
+              <stop offset="100%" stop-color="#691a13" stop-opacity="0.55"/>
+            </linearGradient>
+            <linearGradient id="engravedFill" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#b64234" stop-opacity="0.75"/>
+              <stop offset="100%" stop-color="#7e2219" stop-opacity="0.6"/>
+            </linearGradient>
+
+            <!-- Símbolo: Hoja grabada con franjas cebra curvas (tal como se ve en tu captura) -->
+            <g id="stripedLeaf">
+              <!-- Contorno suave de la hoja -->
+              <path d="M 0,0 C 22,-36 72,-48 108,-30 C 90,-4 50,18 0,0 Z" fill="none" stroke="url(#engravedTone)" stroke-width="1.2"/>
+              <!-- Nervadura central curva -->
+              <path d="M 0,0 Q 58,-15 108,-30" fill="none" stroke="url(#engravedTone)" stroke-width="1.0"/>
+              <!-- Franjas rellenas alternadas superiores -->
+              <path d="M 14,-5 Q 26,-20 40,-26 Q 32,-16 20,-8 Z" fill="url(#engravedFill)"/>
+              <path d="M 30,-9 Q 46,-26 62,-32 Q 54,-20 38,-12 Z" fill="url(#engravedFill)"/>
+              <path d="M 50,-14 Q 68,-27 82,-31 Q 74,-21 60,-16 Z" fill="url(#engravedFill)"/>
+              <path d="M 72,-19 Q 86,-27 98,-29 Q 91,-22 80,-20 Z" fill="url(#engravedFill)"/>
+              <!-- Franjas rellenas alternadas inferiores -->
+              <path d="M 12,-3 Q 22,5 34,6 Q 26,2 16,-1 Z" fill="url(#engravedFill)"/>
+              <path d="M 26,-6 Q 40,9 54,9 Q 44,4 32,-3 Z" fill="url(#engravedFill)"/>
+              <path d="M 44,-10 Q 60,9 74,8 Q 64,3 50,-7 Z" fill="url(#engravedFill)"/>
+              <path d="M 64,-15 Q 78,5 90,3 Q 82,0 70,-12 Z" fill="url(#engravedFill)"/>
+            </g>
+
+            <!-- Símbolo: Ramita arqueada con capullos/bayitas en forma de gota -->
+            <g id="budStem">
+              <!-- Tallo fino arqueado -->
+              <path d="M 0,0 C -30,22 -65,58 -98,112" fill="none" stroke="url(#engravedTone)" stroke-width="1.3" stroke-linecap="round"/>
+              <!-- Capullo 1 -->
+              <path d="M -20,15 Q -30,19 -38,17" stroke="url(#engravedTone)" stroke-width="0.8" fill="none"/>
+              <path d="M -38,17 C -42,14 -48,16 -50,20 C -50,24 -44,24 -40,20 Z" fill="url(#engravedFill)"/>
+              <!-- Capullo 2 -->
+              <path d="M -40,34 Q -52,40 -60,37" stroke="url(#engravedTone)" stroke-width="0.8" fill="none"/>
+              <path d="M -60,37 C -64,34 -70,36 -72,40 C -72,44 -66,44 -62,40 Z" fill="url(#engravedFill)"/>
+              <!-- Capullo 3 -->
+              <path d="M -60,58 Q -73,66 -82,63" stroke="url(#engravedTone)" stroke-width="0.8" fill="none"/>
+              <path d="M -82,63 C -86,60 -92,62 -94,66 C -94,70 -88,70 -84,66 Z" fill="url(#engravedFill)"/>
+              <!-- Capullo 4 -->
+              <path d="M -78,84 Q -91,94 -100,91" stroke="url(#engravedTone)" stroke-width="0.8" fill="none"/>
+              <path d="M -100,91 C -104,88 -110,90 -112,94 C -112,98 -106,98 -102,94 Z" fill="url(#engravedFill)"/>
+              <!-- Capullo en la punta -->
+              <path d="M -98,112 C -102,120 -100,126 -95,126 C -90,126 -92,118 -98,112 Z" fill="url(#engravedFill)"/>
+            </g>
+          </defs>
+
+          <!-- ====== ARREGLO SUPERIOR DERECHO (CORRESPONDENCIA EXACTA CON TU CAPTURA) ====== -->
+          <g id="topRightBouquet">
+            <!-- Pétalos amplios de la gran flor de fondo -->
+            <path d="M 345,70 C 400,15 470,22 495,68 C 515,108 450,140 355,100" fill="none" stroke="url(#engravedTone)" stroke-width="1.3" opacity="0.85"/>
+            <path d="M 355,80 C 430,45 500,75 510,125 C 515,160 460,185 365,115" fill="none" stroke="url(#engravedTone)" stroke-width="1.1" opacity="0.6"/>
+            <!-- Nervaduras sutiles en los pétalos -->
+            <path d="M 350,75 Q 430,55 490,70" stroke="url(#engravedTone)" stroke-width="0.7" opacity="0.45" fill="none"/>
+            <path d="M 370,82 Q 445,88 495,115" stroke="url(#engravedTone)" stroke-width="0.6" opacity="0.4" fill="none"/>
+
+            <!-- Hoja grande grabada con franjas cebra (apuntando hacia la esquina superior) -->
+            <use href="#stripedLeaf" transform="translate(435, 68) rotate(-18) scale(0.95)"/>
+            <!-- Segunda hoja grabada hacia el lateral -->
+            <use href="#stripedLeaf" transform="translate(470, 115) rotate(42) scale(0.78)"/>
+
+            <!-- Ramita arqueada con bayitas/gotas apuntando hacia abajo-izquierda -->
+            <use href="#budStem" transform="translate(450, 85) rotate(-15) scale(0.85)"/>
+            <!-- Ramita secundaria ascendente con gotitas -->
+            <use href="#budStem" transform="translate(485, 45) rotate(-110) scale(0.65)"/>
+            
+            <!-- Zarcillos y brotes laterales -->
+            <path d="M 495,68 C 530,55 570,75 605,115" fill="none" stroke="url(#engravedTone)" stroke-width="1.1" opacity="0.7"/>
+            <path d="M 570,75 C 578,65 590,62 594,68 C 596,73 588,78 584,72" fill="none" stroke="url(#engravedTone)" stroke-width="0.8" opacity="0.8"/>
+            <use href="#stripedLeaf" transform="translate(565, 80) rotate(15) scale(0.6)"/>
+          </g>
+
+          <!-- ====== ARREGLO SUPERIOR IZQUIERDO (ESPEJO ARMONIOSO) ====== -->
+          <g transform="translate(330, 0) scale(-1, 1) translate(-330, 0)">
+            <use href="#topRightBouquet"/>
+          </g>
+
+          <!-- ====== GUIRNALDA INFERIOR ENMARCANDO EL BOTÓN "ABRIR" ====== -->
+          <!-- Guirnalda inferior izquierda -->
+          <g transform="translate(195, 442) rotate(145)">
+            <path d="M 0,0 C 45,25 95,60 145,130" fill="none" stroke="url(#engravedTone)" stroke-width="1.2" opacity="0.75"/>
+            <use href="#stripedLeaf" transform="translate(35, 18) rotate(-25) scale(0.7)"/>
+            <use href="#budStem" transform="translate(65, 45) rotate(-10) scale(0.6)"/>
+          </g>
+
+          <!-- Guirnalda inferior derecha -->
+          <g transform="translate(465, 442) scale(-1, 1) rotate(145)">
+            <path d="M 0,0 C 45,25 95,60 145,130" fill="none" stroke="url(#engravedTone)" stroke-width="1.2" opacity="0.75"/>
+            <use href="#stripedLeaf" transform="translate(35, 18) rotate(-25) scale(0.7)"/>
+            <use href="#budStem" transform="translate(65, 45) rotate(-10) scale(0.6)"/>
+          </g>
+
+          <!-- Pétalos fanning centrales debajo del botón -->
+          <path d="M 330,472 C 285,448 245,465 252,488" fill="none" stroke="url(#engravedTone)" stroke-width="1.0" opacity="0.5"/>
+          <path d="M 330,472 C 375,448 415,465 408,488" fill="none" stroke="url(#engravedTone)" stroke-width="1.0" opacity="0.5"/>
+        </svg>
+
+        <!-- Sello dorado con corazón y suave resplandor -->
+        <div class="seal-heart-container">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+
+        <!-- Nombres de la pareja (Tipografía Title Case refinada como Imagen 2) -->
+        <div style="margin-top:12px; position:relative; z-index:5;">
+          <h1 class="cover-names">Valentin</h1>
+          <div class="cover-ampersand">&</div>
+          <h1 class="cover-names">Mariluz</h1>
+
+          <!-- Divisor elegante con adorno botánico central -->
+          <div class="cover-divider">
+            <div class="line"></div>
+            <svg viewBox="0 0 24 24"><path d="M12 2C10.5 4.5 9 7.5 9 10C9 12.5 10.5 14 12 15C13.5 14 15 12.5 15 10C15 7.5 13.5 4.5 12 2ZM12 17C10 17 8 18 6 20C9 20.5 11 19.5 12 18.5C13 19.5 15 20.5 18 20C16 18 14 17 12 17Z"/></svg>
+            <div class="line"></div>
+          </div>
+
+          <p class="cover-date">07 de noviembre de 2026</p>
+          <p class="cover-invitation-text">Les Invitamos Cordialmente</p>
+
+          <!-- Nombre personalizado del invitado / familia (Dinámico por enlace) -->
+          <div class="guest-container" id="guestContainer">
+            <h2 class="guest-name" id="guestName">Familia & Amigos</h2>
+            <div class="guest-passes" id="guestPasses" style="display: none;">2 Pases</div>
+          </div>
+        </div>
+
+        <!-- Botón Abrir centrado enmarcado por las ramas inferiores -->
+        <button class="btn-open" id="btnOpen" onclick="openInvitation()">
+          Abrir
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- =======================================
+         VISTA 2: DETALLES DEL EVENTO
+         ======================================= -->
+    <main id="view-details">
+      
+      <!-- Ornamento floral superior -->
+      <svg class="ornament-header" viewBox="0 0 300 70">
+        <path d="M150,55 C180,20 230,25 285,15" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+        <path d="M150,55 C120,20 70,25 15,15" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+        <circle cx="150" cy="55" r="4" fill="#d4af37"/>
+        <circle cx="285" cy="15" r="3" fill="#d4af37"/>
+        <circle cx="15" cy="15" r="3" fill="#d4af37"/>
+      </svg>
+
+      <div class="header-pretitle">NUESTRA BODA CIVIL</div>
+      <div class="couple-title-serif">Valentin</div>
+      <div class="couple-title-amp">&</div>
+      <div class="couple-title-serif">Mariluz</div>
+
+      <div class="ornament-divider">
+        <svg viewBox="0 0 24 24"><path d="M12 3C7 3 3 7 3 12C3 17 7 21 12 21C17 21 21 17 21 12C21 7 17 3 12 3ZM12 19C8.1 19 5 15.9 5 12C5 8.1 8.1 5 12 5C15.9 5 19 8.1 19 12C19 15.9 15.9 19 12 19Z"/></svg>
+      </div>
+
+      <!-- Tarjeta Ceremonia civil estilo foto de referencia -->
+      <div class="event-card">
+        <h3 class="event-type-title">CEREMONIA CIVIL</h3>
+        <p class="event-place">Vallecito de Huancaro A-5, Santiago, Cusco</p>
+        
+        <div class="event-time-intro">A LAS</div>
+
+        <!-- Desglose de horarios: Llegada e Inicio -->
+        <div class="event-schedule-duo">
+          <div class="schedule-item">
+            <span class="schedule-time">10:00 A.M.</span>
+            <span class="schedule-label">Llegada de invitados</span>
+          </div>
+          <div class="schedule-separator">|</div>
+          <div class="schedule-item">
+            <span class="schedule-time">11:00 A.M.</span>
+            <span class="schedule-label">Inicio de ceremonia</span>
+          </div>
+        </div>
+        
+        <!-- Fecha estilo idéntico a la foto (Día grande y año 2026 centrado abajo) -->
+        <div class="event-date-block">
+          <div class="event-date-row">
+            <span class="date-day-name">SÁBADO</span>
+            <span class="date-bar">|</span>
+            <span class="date-day-number">07</span>
+            <span class="date-bar">|</span>
+            <span class="date-month-name">NOVIEMBRE</span>
+          </div>
+          <div class="date-year">2026</div>
+        </div>
+
+        <a href="https://maps.app.goo.gl/FuFKRAiyqq5TeqEt9" target="_blank" class="btn-card-action">
+          <!-- Ícono de ubicación 3D facetado con ondas en el suelo adaptado a la temática dorada -->
+          <svg class="maps-icon" viewBox="0 0 100 120" fill="none">
+            <defs>
+              <linearGradient id="pinGoldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fff5d6"/>
+                <stop offset="45%" stop-color="#f5d378"/>
+                <stop offset="100%" stop-color="#d4af37"/>
+              </linearGradient>
+              <linearGradient id="pinGoldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#d4af37"/>
+                <stop offset="55%" stop-color="#a87f22"/>
+                <stop offset="100%" stop-color="#694d10"/>
+              </linearGradient>
+              <linearGradient id="pinRippleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(212,175,55,0.25)"/>
+                <stop offset="50%" stop-color="#f5d378"/>
+                <stop offset="100%" stop-color="rgba(212,175,55,0.25)"/>
+              </linearGradient>
+            </defs>
+            <!-- Ondas concéntricas en el suelo (Ripples) -->
+            <path d="M 18,107 C 18,114 82,114 82,107 C 82,101 68,99 50,99 C 32,99 18,101 18,107" stroke="url(#pinRippleGrad)" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M 30,104 C 30,109 70,109 70,104 C 70,100 60,98 50,98 C 40,98 30,100 30,104" stroke="url(#pinRippleGrad)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- Cara Izquierda Iluminada del Pin -->
+            <path d="M 50,6 C 30.1,6 14,22.1 14,42 C 14,64 36,81 50,96 L 50,60 C 40.1,60 32,51.9 32,42 C 32,32.1 40.1,24 50,24 Z" fill="url(#pinGoldLight)"/>
+            <!-- Cara Derecha Sombreada en 3D (Efecto Facetado) -->
+            <path d="M 50,6 C 69.9,6 86,22.1 86,42 C 86,64 64,81 50,96 L 50,60 C 59.9,60 68,51.9 68,42 C 68,32.1 59.9,24 50,24 Z" fill="url(#pinGoldDark)"/>
+            <!-- Borde interior sutil -->
+            <circle cx="50" cy="42" r="18" stroke="rgba(255,245,215,0.4)" stroke-width="1" fill="none"/>
+          </svg>
+          <span>Ver Ubicación en Google Maps</span>
+        </a>
+      </div>
+
+      <!-- Galería de Fotos -->
+      <div class="ornament-divider">
+        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+
+      <h3 class="section-title">GALERÍA DE FOTOS</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox(0)">
+          <!-- Foto 1 Valentin & Mariluz -->
+          <img src="foto1.jpeg" onerror="if(!this.src.endsWith('.jpg')) { this.src='foto1.jpg'; } else { this.onerror=null; this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80'; }" alt="Foto Valentin & Mariluz 1">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(1)">
+          <!-- Foto 2 Valentin & Mariluz -->
+          <img src="foto2.jpeg" onerror="if(!this.src.endsWith('.jpg')) { this.src='foto2.jpg'; } else { this.onerror=null; this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80'; }" alt="Foto Valentin & Mariluz 2">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(2)">
+          <!-- Foto 3 Valentin & Mariluz -->
+          <img src="foto3.jpeg" onerror="if(!this.src.endsWith('.jpg')) { this.src='foto3.jpg'; } else { this.onerror=null; this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80'; }" alt="Foto Valentin & Mariluz 3">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(3)">
+          <!-- Foto 4 Valentin & Mariluz -->
+          <img src="foto4.jpeg" onerror="if(!this.src.endsWith('.jpg')) { this.src='foto4.jpg'; } else { this.onerror=null; this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=600&q=80'; }" alt="Foto Valentin & Mariluz 4">
+        </div>
+      </div>
+
+      <!-- Cuenta Regresiva -->
+      <div class="countdown-section">
+        <div class="countdown-label">CUENTA REGRESIVA</div>
+        <div class="countdown-grid">
+          <div class="countdown-box">
+            <div class="countdown-num" id="cd-days">00</div>
+            <div class="countdown-txt">Días</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="cd-hours">00</div>
+            <div class="countdown-txt">Horas</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="cd-minutes">00</div>
+            <div class="countdown-txt">Min</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="cd-seconds">00</div>
+            <div class="countdown-txt">Seg</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mini Calendario de Noviembre 2026 -->
+      <div class="calendar-card">
+        <div class="calendar-title">NOVIEMBRE 2026</div>
+        <table class="calendar-table">
+          <thead>
+            <tr>
+              <th>Lu</th><th>Ma</th><th>Mi</th><th>Ju</th><th>Vi</th><th>Sá</th><th>Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td>1</td>
+            </tr>
+            <tr>
+              <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+              <td class="wedding-day" title="¡El Gran Día!">7 ❤</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+            </tr>
+            <tr>
+              <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+            </tr>
+            <tr>
+              <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+            </tr>
+            <tr>
+              <td>30</td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Enlace a Google Calendar -->
+        <a class="btn-add-calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Matrimonio+Civil+de+Valentin+y+Mariluz&dates=20261107T160000Z/20261107T220000Z&details=%C2%A1Acomp%C3%A1%C3%B1anos+a+celebrar+nuestro+matrimonio+civil!&location=Vallecito+de+Huancaro+A-5,+Santiago,+Cusco" target="_blank">
+          📅 Añadir al Calendario
+        </a>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- Audio de fondo nativo (busca archivo local o enlace directo online) -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="musica.mp3" type="audio/mp3">
+    <source src="L'Italiano.mp3" type="audio/mp3">
+    <source src="musica.m4a" type="audio/mp4">
+    <source src="musica.wav" type="audio/wav">
+    <source src="https://archive.org/download/toto-cutugno-the-very-best-of-2015/L%27italiano.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Selector opcional para cargar tu archivo de música directamente -->
+  <input type="file" id="localAudioInput" accept="audio/*" style="display: none;">
+
+  <!-- Botón flotante de audio -->
+  <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Música de fondo (Toca para reproducir/pausar)">
+    <svg id="musicIconPlay" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+  </button>
+
+  <!-- Modal / Visor de Fotos Lightbox Elegante -->
+  <div id="photoLightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)" title="Cerrar (Esc)">&times;</button>
+    <button class="lightbox-arrow lightbox-prev" onclick="changeLightboxPhoto(-1, event)" title="Foto Anterior">&#10094;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Foto Ampliada">
+      <div id="lightboxCaption" class="lightbox-caption">Valentin & Mariluz</div>
+    </div>
+    <button class="lightbox-arrow lightbox-next" onclick="changeLightboxPhoto(1, event)" title="Foto Siguiente">&#10095;</button>
+  </div>
+
+  <script>
+    const music = document.getElementById('bgMusic');
+    const musicBtn = document.getElementById('musicBtn');
+    const localAudioInput = document.getElementById('localAudioInput');
+    let isPlaying = false;
+
+    // Selector de audio local
+    if (localAudioInput) {
+      localAudioInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          music.src = URL.createObjectURL(file);
+          music.play().then(() => {
+            isPlaying = true;
+            musicBtn.classList.add('playing');
+          }).catch(err => console.log(err));
+        }
+      });
+    }
+
+    // Permitir arrastrar y soltar cualquier canción MP3 directamente sobre la pantalla
+    window.addEventListener('dragover', (e) => e.preventDefault());
+    window.addEventListener('drop', (e) => {
+      e.preventDefault();
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
+        const file = e.dataTransfer.files[0];
+        if (file.name.endsWith('.mp3') || file.name.endsWith('.wav') || file.type.startsWith('audio/')) {
+          music.src = URL.createObjectURL(file);
+          music.play().then(() => {
+            isPlaying = true;
+            musicBtn.classList.add('playing');
+          }).catch(err => console.log(err));
+        }
+      }
+    });
+
+    // A. Sonido elegante de apertura (Campanitas de oro / Arpa mágica)
+    function playOpeningChime() {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        const actx = new AudioCtx();
+        if (actx.state === 'suspended') {
+          actx.resume();
+        }
+
+        // Notas del arpegio dorado brillante (D5, F#5, A5, D6, F#6)
+        const notes = [587.33, 739.99, 880.00, 1174.66, 1479.98];
+        const now = actx.currentTime;
+
+        notes.forEach((freq, idx) => {
+          const osc = actx.createOscillator();
+          const gain = actx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+
+          const noteStart = now + idx * 0.08;
+          gain.gain.setValueAtTime(0.001, noteStart);
+          gain.gain.exponentialRampToValueAtTime(0.24, noteStart + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.0001, noteStart + 0.85);
+
+          osc.connect(gain);
+          gain.connect(actx.destination);
+
+          osc.start(noteStart);
+          osc.stop(noteStart + 0.9);
+        });
+      } catch (err) {
+        console.log("Efecto de apertura:", err);
+      }
+    }
+
+    // 1. Apertura de la invitación
+    function openInvitation() {
+      // 1. Suena inmediatamente el efecto sutil de apertura
+      playOpeningChime();
+
+      // 2. Transición visual de la tarjeta
+      const cover = document.getElementById('view-cover');
+      const details = document.getElementById('view-details');
+      
+      cover.classList.add('open');
+      details.classList.add('visible');
+
+      // 3. Cuando abre el detalle de la invitación (~850ms), inicia la música automáticamente
+      setTimeout(() => {
+        startBackgroundMusic();
+      }, 850);
+
+      // Desactivar el cover después de la animación para no interferir con el scroll
+      setTimeout(() => {
+        cover.style.display = 'none';
+      }, 1100);
+    }
+
+    // 2. Control de música de fondo
+    function startBackgroundMusic() {
+      if (music) {
+        music.volume = 0.85;
+        music.play().then(() => {
+          isPlaying = true;
+          musicBtn.classList.add('playing');
+        }).catch(err => {
+          console.log("Si el archivo no está en la carpeta, puedes seleccionarlo:", err);
+        });
+      }
+    }
+
+    function toggleMusic() {
+      if (!music) return;
+      if (isPlaying) {
+        music.pause();
+        musicBtn.classList.remove('playing');
+        isPlaying = false;
+      } else {
+        // Si no está sonando, intenta reproducir; si no tiene audio cargado aún, abre el selector
+        const playPromise = music.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            isPlaying = true;
+            musicBtn.classList.add('playing');
+          }).catch(() => {
+            if (localAudioInput) localAudioInput.click();
+          });
+        } else if (localAudioInput) {
+          localAudioInput.click();
+        }
+      }
+    }
+
+    // Sincronizar estado visual del botón
+    if (music) {
+      music.addEventListener('play', () => {
+        isPlaying = true;
+        musicBtn.classList.add('playing');
+      });
+      music.addEventListener('pause', () => {
+        isPlaying = false;
+        musicBtn.classList.remove('playing');
+      });
+    }
+
+    // 3. Cuenta regresiva en tiempo real al 07 de Noviembre de 2026 a las 11:00 A.M.
+    const targetDate = new Date('2026-11-07T11:00:00').getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        document.getElementById('cd-days').innerText = "00";
+        document.getElementById('cd-hours').innerText = "00";
+        document.getElementById('cd-minutes').innerText = "00";
+        document.getElementById('cd-seconds').innerText = "00";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('cd-days').innerText = String(days).padStart(2, '0');
+      document.getElementById('cd-hours').innerText = String(hours).padStart(2, '0');
+      document.getElementById('cd-minutes').innerText = String(minutes).padStart(2, '0');
+      document.getElementById('cd-seconds').innerText = String(seconds).padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // 4. Personalización dinámica de invitados por URL (?invitado=Nombre&pases=2)
+    function loadGuestData() {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        // Soporta ?invitado=, ?nombre=, ?n= o ?guest=
+        const guest = urlParams.get('invitado') || urlParams.get('nombre') || urlParams.get('n') || urlParams.get('guest');
+        // Soporta ?pases= o ?p=
+        const passes = urlParams.get('pases') || urlParams.get('p');
+
+        const nameEl = document.getElementById('guestName');
+        const passesEl = document.getElementById('guestPasses');
+
+        if (guest && nameEl) {
+          nameEl.textContent = guest;
+        }
+
+        if (passes && passesEl) {
+          passesEl.style.display = 'inline-block';
+          const pNum = parseInt(passes, 10);
+          if (!isNaN(pNum)) {
+            passesEl.textContent = pNum === 1 ? '1 Pase Personal' : `${pNum} Pases`;
+          } else {
+            passesEl.textContent = passes;
+          }
+        }
+
+        // Personalizar también el mensaje de WhatsApp (RSVP) con el nombre y pases del invitado
+        const rsvpBtn = document.querySelector('.btn-rsvp');
+        if (rsvpBtn) {
+          const guestDetail = guest ? ` de ${guest}` : '';
+          const passesDetail = passes ? ` (${passes} pases)` : '';
+          rsvpBtn.href = `https://wa.me/51999999999?text=${encodeURIComponent(`¡Hola! Confirmo con mucha alegría la asistencia${guestDetail}${passesDetail} al matrimonio civil de Valentin y Mariluz 💍`)}`;
+        }
+      } catch (err) {
+        console.log("Información de invitado:", err);
+      }
+    }
+    loadGuestData();
+
+    // 4. Lluvia mágica de Destellos Dorados que caen (Falling Sparkles)
+    const canvas = document.getElementById('sparklesCanvas');
+    const ctx = canvas.getContext('2d');
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    function resizeCanvas() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    // Dibujar estrella de 4 puntas cóncava
+    function drawStar(cx, cy, radius, rot, opacity) {
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(rot);
+
+      ctx.beginPath();
+      ctx.moveTo(0, -radius);
+      ctx.quadraticCurveTo(0, 0, radius, 0);
+      ctx.quadraticCurveTo(0, 0, 0, radius);
+      ctx.quadraticCurveTo(0, 0, -radius, 0);
+      ctx.quadraticCurveTo(0, 0, 0, -radius);
+      ctx.closePath();
+
+      // Relleno dorado champán sutil con resplandor suave
+      ctx.fillStyle = `rgba(255, 238, 195, ${opacity})`;
+      ctx.shadowColor = 'rgba(215, 180, 85, 0.6)';
+      ctx.shadowBlur = radius * 0.6;
+      ctx.fill();
+
+      // Centro luminoso blanco muy fino
+      if (radius > 3.0) {
+        ctx.beginPath();
+        const innerR = radius * 0.38;
+        ctx.moveTo(0, -innerR);
+        ctx.quadraticCurveTo(0, 0, innerR, 0);
+        ctx.quadraticCurveTo(0, 0, 0, innerR);
+        ctx.quadraticCurveTo(0, 0, -innerR, 0);
+        ctx.quadraticCurveTo(0, 0, 0, -innerR);
+        ctx.closePath();
+        ctx.fillStyle = `rgba(255, 255, 255, ${opacity * 0.85})`;
+        ctx.shadowBlur = 1.5;
+        ctx.fill();
+      }
+
+      ctx.restore();
+    }
+
+    // Configuración minimalista y elegante: pocos destellos, flotación lenta y serena
+    const particleCount = width < 600 ? 12 : 20;
+    const particles = [];
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: 1.8 + Math.random() * 3.2, // Puntos de luz finos (3.5px a 10px)
+        speedY: 0.15 + Math.random() * 0.32, // Descenso ingrávido y pausado
+        swayAmp: 6 + Math.random() * 12, // Bamboleo muy suave
+        swaySpeed: 0.007 + Math.random() * 0.012,
+        swayPhase: Math.random() * Math.PI * 2,
+        rot: Math.random() * Math.PI * 2,
+        rotSpeed: (Math.random() - 0.5) * 0.01,
+        twinklePhase: Math.random() * Math.PI * 2,
+        twinkleSpeed: 0.015 + Math.random() * 0.03, // Titileo tenue y pausado
+        baseOp: 0.22 + Math.random() * 0.42
+      });
+    }
+
+    function animateSparkles() {
+      ctx.clearRect(0, 0, width, height);
+
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        
+        // Caída lenta y sutil
+        p.y += p.speedY;
+        p.swayPhase += p.swaySpeed;
+        p.rot += p.rotSpeed;
+        p.twinklePhase += p.twinkleSpeed;
+
+        // Trayectoria orgánica
+        const currentX = p.x + Math.sin(p.swayPhase) * p.swayAmp;
+        const currentOp = Math.max(0.08, Math.min(0.72, p.baseOp + Math.sin(p.twinklePhase) * 0.28));
+
+        drawStar(currentX, p.y, p.radius, p.rot, currentOp);
+
+        // Respawn suave arriba
+        if (p.y > height + 20) {
+          p.y = -20 - Math.random() * 15;
+          p.x = Math.random() * width;
+        }
+      }
+
+      requestAnimationFrame(animateSparkles);
+    }
+
+    animateSparkles();
+
+    // 5. Visor de Fotos Lightbox (Ampliación, Navegación y Cierre)
+    let currentPhotoIdx = 0;
+
+    function openLightbox(index) {
+      currentPhotoIdx = index;
+      const lb = document.getElementById('photoLightbox');
+      const lbImg = document.getElementById('lightboxImg');
+      const lbCap = document.getElementById('lightboxCaption');
+      const items = document.querySelectorAll('.gallery-grid .gallery-item img');
+
+      if (!lb || !lbImg) return;
+      if (items[currentPhotoIdx]) {
+        lbImg.src = items[currentPhotoIdx].currentSrc || items[currentPhotoIdx].src;
+        if (lbCap) {
+          lbCap.textContent = `Valentin & Mariluz • Foto ${currentPhotoIdx + 1} de ${items.length}`;
+        }
+      }
+      lb.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function updateLightboxContent() {
+      const lbImg = document.getElementById('lightboxImg');
+      const lbCap = document.getElementById('lightboxCaption');
+      const items = document.querySelectorAll('.gallery-grid .gallery-item img');
+      if (items[currentPhotoIdx] && lbImg) {
+        lbImg.src = items[currentPhotoIdx].currentSrc || items[currentPhotoIdx].src;
+        if (lbCap) {
+          lbCap.textContent = `Valentin & Mariluz • Foto ${currentPhotoIdx + 1} de ${items.length}`;
+        }
+      }
+    }
+
+    function closeLightbox(e) {
+      if (e && e.target && (e.target.id === 'lightboxImg' || e.target.classList.contains('lightbox-arrow'))) {
+        return;
+      }
+      const lb = document.getElementById('photoLightbox');
+      if (lb) lb.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function changeLightboxPhoto(direction, e) {
+      if (e) e.stopPropagation();
+      const lbImg = document.getElementById('lightboxImg');
+      const items = document.querySelectorAll('.gallery-grid .gallery-item img');
+      currentPhotoIdx = (currentPhotoIdx + direction + items.length) % items.length;
+      
+      if (lbImg) {
+        lbImg.style.opacity = '0';
+        lbImg.style.transform = 'scale(0.96)';
+        setTimeout(() => {
+          updateLightboxContent();
+          lbImg.style.transition = 'opacity 0.25s, transform 0.25s';
+          lbImg.style.opacity = '1';
+          lbImg.style.transform = 'scale(1)';
+        }, 150);
+      }
+    }
+
+    // Teclas de teclado (Esc para cerrar, Flechas para navegar)
+    window.addEventListener('keydown', (e) => {
+      const lb = document.getElementById('photoLightbox');
+      if (!lb || !lb.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') changeLightboxPhoto(-1);
+      if (e.key === 'ArrowRight') changeLightboxPhoto(1);
+    });
+
+    // Deslizar con el dedo en pantallas táctiles (Touch Swipe para celular)
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const lb = document.getElementById('photoLightbox');
+      if (lb) {
+        lb.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        lb.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          if (touchStartX - touchEndX > 50) {
+            changeLightboxPhoto(1);
+          } else if (touchEndX - touchStartX > 50) {
+            changeLightboxPhoto(-1);
+          }
+        }, { passive: true });
+      }
+    });
+  </script>
+</body>
+</html>
